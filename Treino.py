@@ -19,15 +19,28 @@
 # if / elif     / else
 # se / se nao se / se nao
 
-entrada = input('Voce quer "entrar" ou "sair"? ')
+# entrada = input('Voce quer "entrar" ou "sair"? ')
 
-if entrada == 'entrar':
-    print('Voce entrou no sistema')
+# if entrada == 'entrar':
+#     print('Voce entrou no sistema')
 
-elif entrada == 'sair':
-    print('Voce saiu do sistema')   
+# elif entrada == 'sair':
+#     print('Voce saiu do sistema')   
 
-else:
-    print('Voce nao digitou nenhuma opçao. ')        
+# else:
+#     print('Voce nao digitou nenhuma opçao. ')      
+# valor1 = input('Digite um valor: ')
+# valor2 = input('Digite outro valor: ')
+# textoMaior = f'O "{valor1}" é maior que o "{valor2}"'
+# textoMenor = f'O "{valor1}" é menor que o "{valor2}"'
+
+# if valor1 >= valor2:
+#     print(textoMaior)
+
+# elif valor1 < valor2:
+#         print(textoMenor)
+
+senha = input('Senha: ') or 'Sem senha'
+print(senha)
 
 
