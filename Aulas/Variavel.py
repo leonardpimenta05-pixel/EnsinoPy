@@ -1,4 +1,4 @@
- # apenas testando as variaveis, criando e mostrando no terminal
+# apenas testando as variaveis, criando e mostrando no terminal
 quero_dinheiro = 'leonardo'
 soma = 2 + 2
 print(soma, quero_dinheiro)
