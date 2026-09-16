@@ -1,4 +1,4 @@
-secreta = 'Stephany'
+secreta = 'Santos'
 letras_acertadas = ''
 tentativa = 0
 
