@@ -32,3 +32,14 @@ while i < len(str):
 
 # print('Acabou.')
 
+senhaSalva = '200605'
+senhaDigitada = ''
+repeticoes = 0
+
+while senhaSalva != senhaDigitada:
+    senhaDigitada = input(f'Sua senha ({repeticoes}x): ')
+
+    repeticoes += 1
+
+print(f'Voce errou a senha {repeticoes}x.')
+    
