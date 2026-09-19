@@ -18,7 +18,7 @@ Usando range para intervalo de numeros
 uma forma bem mais pratica de fazer o que o while fazia.
 
 '''
-numbers = range (0, 55, 5)
+numbers = range (0, 100)
 
 for number in numbers:
     print(number)

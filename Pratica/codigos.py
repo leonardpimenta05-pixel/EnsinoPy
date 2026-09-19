@@ -32,14 +32,21 @@ while i < len(str):
 
 # print('Acabou.')
 
-senhaSalva = '200605'
-senhaDigitada = ''
-repeticoes = 0
+# senhaSalva = '200605'
+# senhaDigitada = ''
+# repeticoes = 0
 
-while senhaSalva != senhaDigitada:
-    senhaDigitada = input(f'Sua senha ({repeticoes}x): ')
+# while senhaSalva != senhaDigitada:
+#     senhaDigitada = input(f'Sua senha ({repeticoes}x): ')
 
-    repeticoes += 1
+#     repeticoes += 1
 
-print(f'Voce errou a senha {repeticoes}x.')
+# print(f'Voce errou a senha {repeticoes}x.')
+
+ramon = input('Digite qualquuer coisa')
+
+if len(ramon) > 1:
+     print('esse merda digitou mais de uma coisa')
+else: 
+     print('cala a boca porra')
     
