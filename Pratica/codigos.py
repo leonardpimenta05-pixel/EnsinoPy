@@ -43,10 +43,6 @@ while i < len(str):
 
 # print(f'Voce errou a senha {repeticoes}x.')
 
-ramon = input('Digite qualquuer coisa')
-
-if len(ramon) > 1:
-     print('esse merda digitou mais de uma coisa')
-else: 
-     print('cala a boca porra')
+lista = ['Leonardo', 'Stephany']
+print(lista[0])
     
