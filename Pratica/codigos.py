@@ -39,6 +39,7 @@ else:
             
 '''
 
+'''
 login = 'caramelo'
 password = '200605'   
 
@@ -54,6 +55,31 @@ elif login == acesso and password != senha:
 else:
     print('Usuario nao encontrado, tente novamente')    
 
-    
+'''
+
+'''
+
+saldo = 1000
+print(f'Seu saldo é de R${saldo:.2f}')
+
+saque = float(input('Quanto que voce deseja sacar?: '))
+
+if saque <= 0:
+    print('Valor do saque invalido.')
+
+elif saque > saldo:
+    print('Saldo insuficiente.')
+
+else:
+    valorSaque = saldo - saque
+
+
+    print('Saque realizado com sucesso!')
+    print(f'O valor restante é de R${valorSaque}')        
+
+'''
+          
+
+        
     
 
