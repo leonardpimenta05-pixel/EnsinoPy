@@ -78,8 +78,39 @@ else:
     print(f'O valor restante é de R${valorSaque}')        
 
 '''
-          
 
+'''
+          
+num = int(input('Digite o primeiro numero: '))
+num2 = int(input('Digite o segundo numero: '))
+num3 = int(input('Digite o terceiro numero: '))
+
+if num > num2 and num > num3:
+    print(f'O primeiro numero é maior {num}')
+
+elif num2 > num and num2 > num3:
+    print(f'O segundo numero é maior {num2}')
+
+else:
+    print(f'O terceiro numero é maior {num3}')        
+        
+'''
+
+age = int(input('Digite sua idade: '))
+
+if age < 0:
+    print('Digite uma idade valida.')
+
+elif age <= 12: 
+    print('Voce é uma crianca.')
+
+elif age <= 17:
+    print('Voce é um adolescente.')
+elif age <= 59:
+    print('Voce ja é um adulto.')
+
+else:
+    print('Voce é um idoso.')    
         
     
 
