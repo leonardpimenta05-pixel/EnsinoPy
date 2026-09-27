@@ -96,6 +96,7 @@ else:
         
 '''
 
+'''
 age = int(input('Digite sua idade: '))
 
 if age < 0:
@@ -112,5 +113,25 @@ elif age <= 59:
 else:
     print('Voce é um idoso.')    
         
-    
+'''
+
+compra = int(input('Digite o valor da sua compra: '))
+
+if compra <= 0:
+    print('Numero invalido para desconto.')
+
+elif compra >= 500:
+    desconto = compra * 0.20
+    valorFinal = compra - desconto
+    print('Voce recebeu um desconto de 20%')
+    print(f'Valor final: {valorFinal:.2f}')
+
+elif compra >= 100:
+    desconto = compra * 0.10
+    valorFinal = compra - desconto
+    print('Voce recebeu um desconto de 10%')
+    print(f'Valor final: {valorFinal:.2f}')
+
+else:
+    print('Sem desconto.')          
 
