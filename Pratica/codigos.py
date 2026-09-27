@@ -115,6 +115,7 @@ else:
         
 '''
 
+'''
 compra = int(input('Digite o valor da sua compra: '))
 
 if compra <= 0:
@@ -135,3 +136,19 @@ elif compra >= 100:
 else:
     print('Sem desconto.')          
 
+'''
+
+idade = int(input('Digite sua idade: '))
+altura = float(input('Digite sua altura: '))
+
+if idade >= 12 and altura >= 1.40:
+    print('Entrada permitida, Divirta-se!!!')
+
+elif idade < 12 and altura < 1.40:
+    print('Idade e altura insuficientes.')
+
+elif idade < 12:
+    print('Idade insuficiente')
+
+else:
+    print('Altura insuficiente.')
