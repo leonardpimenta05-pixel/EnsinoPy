@@ -138,6 +138,7 @@ else:
 
 '''
 
+'''
 idade = int(input('Digite sua idade: '))
 altura = float(input('Digite sua altura: '))
 
@@ -152,3 +153,21 @@ elif idade < 12:
 
 else:
     print('Altura insuficiente.')
+'''
+
+idade = int(input('Digite sua idade: '))
+salario = float(input('Digite seu salario: '))
+
+if idade >= 18 and salario >= 2000:
+    print('Emprestimo aprovado.')
+    emprestimo = float(input('Digite o valor do emprestimo: '))
+    print(f'Emprestimo de R${emprestimo:.2f} aprovado!')
+
+elif idade < 18  and salario < 2000:
+    print('Emprestimo negado: Idade e Salario insuficientes.')
+
+elif idade < 18:
+    print('Emprestimo negado: Idade insuficiente.')
+
+else:
+    print('Emprestimo negado: Salario insuficiente.')            
