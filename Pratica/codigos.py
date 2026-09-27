@@ -155,6 +155,7 @@ else:
     print('Altura insuficiente.')
 '''
 
+'''
 idade = int(input('Digite sua idade: '))
 salario = float(input('Digite seu salario: '))
 
@@ -171,3 +172,20 @@ elif idade < 18:
 
 else:
     print('Emprestimo negado: Salario insuficiente.')            
+
+'''
+
+senhaCorreta = '200605'
+
+while True:
+    senha = input('Digite sua senha: ')
+    if len(senha) < 2:
+        print('Digite mais de 1 numero')
+        continue
+
+    elif senha != senhaCorreta:
+        print('Senha incorreta. Tente novamente.')
+        continue
+    else:
+        print('Acesso permitido.')
+        break
