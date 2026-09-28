@@ -215,7 +215,17 @@ while tentativas > 0:
 '''
 
 total = 0
-tentativas = 5
+
+while True:
+    numero = int(input('Digite um numero: '))
+    if numero == 0:
+        print('Programa encerrado.')
+        print(f'Soma total: {total}')
+        break
+
+    total += numero
+
+        
 
 
 
