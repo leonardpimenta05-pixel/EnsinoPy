@@ -174,7 +174,7 @@ else:
     print('Emprestimo negado: Salario insuficiente.')            
 
 '''
-
+'''
 senhaCorreta = '200605'
 
 while True:
@@ -189,3 +189,35 @@ while True:
     else:
         print('Acesso permitido.')
         break
+        
+'''
+'''
+senhaCorreta = 200605
+tentativas = 3
+
+while tentativas > 0:
+    senha = int(input('Digite sua senha: '))
+    if senha == senhaCorreta:
+        print('Acesso permitido.')
+        break
+
+    else:
+        tentativas -= 1
+
+        if tentativas != 0:
+            print(f'Tentativas restantes: {tentativas}')
+            
+
+        else:
+            print('Acesso bloqueado.')
+            break
+            
+'''
+
+total = 0
+tentativas = 5
+
+
+
+    
+    
