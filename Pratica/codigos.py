@@ -245,6 +245,8 @@ print(f'Ultimo produto: {compras[-1]}')
 
 '''
 
+
+'''
 compras = []
 
 while True:
@@ -260,6 +262,22 @@ while True:
     else:
         compras.append(produto)
         print('Produto adicionado!')
-        
+'''        
 
-    
+
+'''
+alunos = []
+
+for numero in range(5):
+    nome = input('Digite um nome: ')
+    alunos.append(nome)
+    print(nome)
+
+for aluno in alunos:
+    if len(aluno) >= 6:
+        print(f'{aluno} - Nome longo')
+
+    else:
+        print(f'{aluno} - Nome curto')    
+
+'''
