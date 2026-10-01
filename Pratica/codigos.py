@@ -214,6 +214,7 @@ while tentativas > 0:
             
 '''
 
+'''
 total = 0
 
 while True:
@@ -224,9 +225,22 @@ while True:
         break
 
     total += numero
+'''
 
+compras = []
+
+produto1 = input('Digite o primeiro produto: ')
+compras.append(produto1)
+
+produto2 = input('Digite o segundo produto: ')
+compras.append(produto2)
+
+produto3 = input('Digite o terceiro produto: ')
+compras.append(produto3)
         
-
+print(f'Quantidade de produtos: {len(compras)}')
+print(f'O primeiro produto: {compras[0]} ')
+print(f'Ultimo produto: {compras[-1]}')
 
 
     
