@@ -227,6 +227,7 @@ while True:
     total += numero
 '''
 
+'''
 compras = []
 
 produto1 = input('Digite o primeiro produto: ')
@@ -242,6 +243,23 @@ print(f'Quantidade de produtos: {len(compras)}')
 print(f'O primeiro produto: {compras[0]} ')
 print(f'Ultimo produto: {compras[-1]}')
 
+'''
 
-    
+compras = []
+
+while True:
+
+    produto = input('Digite um produto: ').lower()
+
+    if produto == 'sair':
+        print('Cadastro encerrado.')
+        print(f'Lista: {compras}')
+        print(f'Quantidade de produto: {len(compras)}')
+        break
+
+    else:
+        compras.append(produto)
+        print('Produto adicionado!')
+        
+
     
