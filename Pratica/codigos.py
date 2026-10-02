@@ -281,3 +281,29 @@ for aluno in alunos:
         print(f'{aluno} - Nome curto')    
 
 '''
+
+numeros = []
+
+for numero in range(5):
+    lista = int(input('Digite um numero: '))
+    numeros.append(lista)
+
+total = 0
+qntdPares = 0
+
+
+for numero in numeros:
+    total += numero
+    if numero % 2 == 0:
+        qntdPares += 1
+
+print(f'Numeros cadastrados: {numeros}')
+print(f'Soma total: {total}')
+print(f'Quantidade de numero pares: {qntdPares}')    
+
+
+
+
+
+
+   
