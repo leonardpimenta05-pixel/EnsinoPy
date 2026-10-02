@@ -282,6 +282,8 @@ for aluno in alunos:
 
 '''
 
+
+'''
 numeros = []
 
 for numero in range(5):
@@ -301,7 +303,24 @@ print(f'Numeros cadastrados: {numeros}')
 print(f'Soma total: {total}')
 print(f'Quantidade de numero pares: {qntdPares}')    
 
+'''
 
+qntdPar = 0
+qntdImpar = 0
+
+numeros = [5, 12, 8 , 3, 20, 7, 14]
+
+for numero in numeros:
+    if numero % 2 == 0:
+        print(f'{numero} - Par')
+        qntdPar += 1
+
+    else: 
+        print(f'{numero} - Impar')
+        qntdImpar += 1
+
+print(f'A quantidade de pares é: {qntdPar}')        
+print(f'A quantidade de impar é: {qntdImpar}')        
 
 
 
