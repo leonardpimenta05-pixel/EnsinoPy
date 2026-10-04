@@ -305,6 +305,7 @@ print(f'Quantidade de numero pares: {qntdPares}')
 
 '''
 
+'''
 qntdPar = 0
 qntdImpar = 0
 
@@ -321,8 +322,26 @@ for numero in numeros:
 
 print(f'A quantidade de pares é: {qntdPar}')        
 print(f'A quantidade de impar é: {qntdImpar}')        
+'''
 
+nomes = ['Ana', 'Leonardo', 'Ametista', 'Bia', 'Fernando', 'Luiz']
+nomeLongo = 0
+nomeCurto = 0
+qntdLetraA = 0
 
+for nome in nomes:
+    if len(nome) > 5:
+        print(f'{nome} - Nome longo.')
+        nomeLongo += 1
+    else:
+        print(f'{nome} - Nome curto.')
+        nomeCurto += 1
+    if nome[0] == 'A':
+        qntdLetraA += 1
+
+print(f'Nomes longos: {nomeLongo}')
+print(f'Nomes curtos: {nomeCurto}')
+print(f'Nomes que começam com A: {qntdLetraA}')
 
 
    
