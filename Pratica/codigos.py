@@ -324,6 +324,7 @@ print(f'A quantidade de pares é: {qntdPar}')
 print(f'A quantidade de impar é: {qntdImpar}')        
 '''
 
+'''
 nomes = ['Ana', 'Leonardo', 'Ametista', 'Bia', 'Fernando', 'Luiz']
 nomeLongo = 0
 nomeCurto = 0
@@ -343,5 +344,38 @@ print(f'Nomes longos: {nomeLongo}')
 print(f'Nomes curtos: {nomeCurto}')
 print(f'Nomes que começam com A: {qntdLetraA}')
 
+'''
 
-   
+'''
+notas = [8.5, 4.0, 7.0, 5.5, 9.0, 3.5, 6.0]
+qntdAprovados = 0
+qntdRecuperacao = 0
+qntdReprovado = 0
+
+for nota in notas:
+    if nota >= 7:
+        print(f'{nota} - Aprovado!')
+        qntdAprovados += 1
+
+    elif nota >=5:
+        print(f'{nota} - Recuperaçao')
+        qntdRecuperacao += 1
+
+    else:
+        print(f'{nota} - Reprovado') 
+        qntdReprovado += 1
+
+print(f'Quantidade de Aprovados: {qntdAprovados}')
+print(f'Quantidade de Recuperaçao: {qntdRecuperacao}')
+print(f'Quantidade de Reprovados: {qntdReprovado}')
+'''
+
+linguagens = ["Python", "Java", "C++", "JavaScript", "Go"]
+
+for indice, linguagem in enumerate(linguagens, 1):
+
+    if indice % 2 != 0:
+        print(f'{indice} - {linguagem} Impar')
+
+    else:
+        print(f'{indice} - {linguagem} Par')    
