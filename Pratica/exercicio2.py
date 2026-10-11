@@ -1,17 +1,32 @@
-nome = input('Digite seu nome: ')
-idade = input('Digite sua idade: ')
+frase = 'Hoje meu dia foi corrido, estou cansado mas continuo focado nos meus estudos'
+#Criando indice, a quantidade e mais vezes que a letra apareceu
 
-if nome and idade:
-    print(f'Seu nome é {nome}')
-    print(f'Seu nome invertido é {nome[::-1]}')
-    if ' ' in nome:
-        print('Seu nome contem espaços')
-    else:
-        print('Seu nome NAO contem espaços')
+i = 0
+quantidade = 0
+maisLetra = ''
 
-    print(f'Seu nome tem {len(nome)} letras')
-    print(f'a primeira letra do seu nome é {nome[0]} ')        
-    print(f'a ultima letra do seu nome é {nome[-1]} ')
+#Iterando na string com while,
+while i < len(frase):
+    letra_atual = frase[i]
 
-else:
-    print('Desculpe, voce deixou campos vazios')     
+#Elimiando os espacos da frase, se houver.
+    if letra_atual == ' ':
+        #O indice deve ser posto aqui tambem, se nao criara um loop infinito, ele sempre barraria no espaco e voltaria, o codigo nunca terminaria.
+        i += 1
+        continue
+
+#Usando count, que serve para contar quantas vezes tal letra, ou palavra aparece na variavel.
+    qtd_atual = frase.count(letra_atual)
+
+#Se a quantidade for menor que a atual, executa o bloco de codigo abaixo.
+    if quantidade <= qtd_atual:
+        quantidade = qtd_atual
+        maisLetra = letra_atual
+
+    i += 1
+#Com tudo feito, o a funcao print mostrara o resultado final.
+print(
+    'A letra que apareceu mais vezes foi '
+    f'"{maisLetra}" que apareceu '
+    f'{quantidade}x'
+)
