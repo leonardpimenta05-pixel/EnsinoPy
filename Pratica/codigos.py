@@ -382,12 +382,18 @@ for indice, linguagem in enumerate(linguagens, 1):
         print(f'{indice} - {linguagem} Par')    
 '''
 
-def multiplo_de(numero, multiplo):
-    resultado = numero % multiplo == 0
-    print(f'{numero} é múltiplo de {multiplo}?', end=' ')
-    print(resultado)
- 
- 
-multiplo_de(16, 8)
-multiplo_de(15, 3)
-multiplo_de(10, 2)
+num = int(input("Digite um numero: "))
+
+if num < 0:
+    print(f'O {num} é negativo.')
+
+elif num > 0:
+    print(f'O numero {num} é positivo')
+
+else:
+    print(f'voce zerou') 
+
+if num % 2 == 0:
+    print(f'{num} é par')
+else:
+    print(f'{num} é impar')
