@@ -382,6 +382,7 @@ for indice, linguagem in enumerate(linguagens, 1):
         print(f'{indice} - {linguagem} Par')    
 '''
 
+'''
 num = int(input("Digite um numero: "))
 
 if num < 0:
@@ -397,3 +398,28 @@ if num % 2 == 0:
     print(f'{num} é par')
 else:
     print(f'{num} é impar')
+'''
+
+num1 = float(input('Digite um numero: '))
+num2 = float(input('Digite outro numero: '))
+op = input('Qual conta deseja fazer?: ')
+
+operador = '+-*/'
+
+if op not in operador:
+    print('Este operador nao existe.')
+
+elif len(op) > 1:
+    print('Digite apenas 1 operador.')
+
+if op == '+':
+    print('A soma da sua conta é:', num1 + num2)
+elif op == '-':
+    print('A subtraçao da sua conta é: ', num1 - num2)
+elif op == '*':
+    print('A multiplicaçao da sua conta é: ', num1 * num2)
+elif op == '/':
+    if num2 == 0:
+        print('Nao é possivel fazer esta divisao.')
+    else:
+        print('A divisao da sua conta é: ', num1 / num2)
